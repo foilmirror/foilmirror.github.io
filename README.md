@@ -1,1 +1,1 @@
-# foilmirror.github.io
+test website stolen from https://pokemondraftleague.online/draft_planner/
