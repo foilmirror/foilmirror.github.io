@@ -269,9 +269,9 @@ function update_team_details(){
         }
         $("#speedgap").text(maxdiff)
     }
-    saveDraft()
+    //saveDraft()
 }
-
+/*
 function saveDraft(){
     team=[]
     $.each($(".top_mon_name"), function(index, item) {
@@ -300,6 +300,7 @@ function saveDraft(){
         }
     });
 }
+*/
 
 function loadDraft(){
     draftid=$("#draftselect").val()
