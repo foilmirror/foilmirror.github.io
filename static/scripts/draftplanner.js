@@ -1,4 +1,4 @@
-//// TODO: average all stats, more important moves, important abilities?
+//// TODO: average all stats, intimidate/regenerator, bottom section with screens/status/trickroom/phasers?, trick room with speed tiers
 
 $(document).ready(function() {
     //initialization
@@ -122,7 +122,7 @@ function appendPokemon(item,gen){
     newItem.append(basestats)
     var usefulmoves=$("<div class='rowmoves col-2 d-flex justify-content-center align-items-center text-center'></div>")
     useful=[]
-    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spike","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish","Fake Out","Extreme Speed","First Impression","Accelrock","Aqua Jet","Bullet Punch","Ice Shard","Mach Punch","Quick Attack","Shadow Sneak","Sucker Punch","Vacuum Wave","Water Shuriken"]
+    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spike","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish","Fake Out","Extreme Speed","First Impression","Accelrock","Aqua Jet","Bullet Punch","Ice Shard","Mach Punch","Quick Attack","Shadow Sneak","Sucker Punch","Vacuum Wave","Water Shuriken","U-turn","Volt Switch","Parting Shot","Teleport","Flip Turn","Knock Off","Reflect","Light Screen","Aurora Veil"]
 
     //GEN 8 DEX CUT WORKAROUND!!!!!!!!!!!
     if(item.data.movesets[gen].length == 0) {
