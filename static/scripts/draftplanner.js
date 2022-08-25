@@ -1,4 +1,4 @@
-//// TODO: Immunities, no moves in a gen check, priority moves, all types checked
+//// TODO: Ability immunities, priority moves
 
 $(document).ready(function() {
     //initialization
