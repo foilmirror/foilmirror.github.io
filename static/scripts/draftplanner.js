@@ -150,7 +150,7 @@ function classify(prefix,suffix){
     return prefix + "-" + suffix.replace(/ /g,"").replace(/:/g,"").replace(/%/g,"").replace(".","").replace("'","").toLowerCase()
 }
 
-function add_filter(filter){
+/*function add_filter(filter){
     var filtertext, filterid
     clickedtext=filter.text()
     if (filter.hasClass("filtertype")){
@@ -167,7 +167,7 @@ function add_filter(filter){
     filterPokemon()
     $("#moninput").val("")
     $("#searchlist").addClass("d-none")
-}
+}*/
 
 function filterPokemon() {
     activefilters=$(".activefilter")
