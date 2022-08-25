@@ -241,12 +241,27 @@ function update_team_details(){
             img=data.find('.monimage')
             classList=data.attr('class').split(/\s+/);
             $.each(classList, function(index, item_) {
-                //I am so sorry
-                if (item_ == "ability-dryskin" || item_ == "ability-waterabsorb" || item_ == "ability-stormdrain") {$(`#teaminfo td.${"water3"}`).append(img.clone())}
-                if (item_ == "ability-flashfire") {$(`#teaminfo td.${"fire3"}`).append(img.clone())}
-                if (item_ == "ability-sapsipper") {$(`#teaminfo td.${"grass3"}`).append(img.clone())}
-                if (item_ == "ability-lightningrod" || item_ == "ability-voltabsorb" || item_ == "ability-motordrive") {$(`#teaminfo td.${"electric3"}`).append(img.clone())}
-                if (item_ == "ability-levitate") {$(`#teaminfo td.${"ground3"}`).append(img.clone())}
+                if (item_ == "ability-dryskin" || item_ == "ability-waterabsorb" || item_ == "ability-stormdrain") {
+                  $(`#teaminfo td.${"water3"}`).append(img.clone())
+                  $(`#teaminfo td.${"water3"}`).append("*")
+                }
+                if (item_ == "ability-flashfire") {
+                  $(`#teaminfo td.${"fire3"}`).append(img.clone())
+                  $(`#teaminfo td.${"fire3"}`).append("*")
+                }
+                if (item_ == "ability-sapsipper") {
+                  $(`#teaminfo td.${"grass3"}`).append(img.clone())
+                  $(`#teaminfo td.${"grass3"}`).append("*")
+                }
+                if (item_ == "ability-lightningrod" || item_ == "ability-voltabsorb" || item_ == "ability-motordrive") {
+                  $(`#teaminfo td.${"electric3"}`).append(img.clone())
+                  $(`#teaminfo td.${"electric3"}`).append("*")
+                }
+                if (item_ == "ability-levitate") {
+                  $(`#teaminfo td.${"ground3"}`).append(img.clone())
+                  $(`#teaminfo td.${"ground3"}`).append("*")
+                }
+
                 $(`#teaminfo td.${item_}`).append(img.clone())
             })
             speed=data.find(".monspeed").text()
