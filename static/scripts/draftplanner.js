@@ -1,4 +1,4 @@
-//// TODO: Ability immunities, priority moves
+//// TODO: Ability immunities, average all stats
 
 $(document).ready(function() {
     //initialization
@@ -122,7 +122,7 @@ function appendPokemon(item,gen){
     newItem.append(basestats)
     var usefulmoves=$("<div class='rowmoves col-2 d-flex justify-content-center align-items-center text-center'></div>")
     useful=[]
-    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spike","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish"]
+    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spike","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish","Fake Out","Extreme Speed","First Impression","Accelrock","Aqua Jet","Bullet Punch","Ice Shard","Mach Punch","Quick Attack","Shadow Sneak","Sucker Punch","Vacuum Wave","Water Shuriken"]
 
     //WORKAROUND!!!!!!!!!!!
     if(item.data.movesets[gen].length == 0) {
