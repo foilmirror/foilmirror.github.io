@@ -1,4 +1,4 @@
-//// TODO: Ability immunities, average all stats
+//// TODO: Average all stats, more important moves, important abilities?
 
 $(document).ready(function() {
     //initialization
@@ -124,7 +124,7 @@ function appendPokemon(item,gen){
     useful=[]
     usefulmoveslist=["Stealth Rock","Spikes","Toxic Spike","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish","Fake Out","Extreme Speed","First Impression","Accelrock","Aqua Jet","Bullet Punch","Ice Shard","Mach Punch","Quick Attack","Shadow Sneak","Sucker Punch","Vacuum Wave","Water Shuriken"]
 
-    //WORKAROUND!!!!!!!!!!!
+    //GEN 8 DEX CUT WORKAROUND!!!!!!!!!!!
     if(item.data.movesets[gen].length == 0) {
         gen = "gen7"
     }
@@ -241,6 +241,12 @@ function update_team_details(){
             img=data.find('.monimage')
             classList=data.attr('class').split(/\s+/);
             $.each(classList, function(index, item_) {
+                //I am so sorry
+                if (item_ == "ability-dryskin" || item_ == "ability-waterabsorb" || item_ == "ability-stormdrain") {$(`#teaminfo td.${"water3"}`).append(img.clone())}
+                if (item_ == "ability-flashfire") {$(`#teaminfo td.${"fire3"}`).append(img.clone())}
+                if (item_ == "ability-sapsipper") {$(`#teaminfo td.${"grass3"}`).append(img.clone())}
+                if (item_ == "ability-lightningrod" || item_ == "ability-voltabsorb" || item_ == "ability-motordrive") {$(`#teaminfo td.${"electric3"}`).append(img.clone())}
+                if (item_ == "ability-levitate") {$(`#teaminfo td.${"ground3"}`).append(img.clone())}
                 $(`#teaminfo td.${item_}`).append(img.clone())
             })
             speed=data.find(".monspeed").text()
