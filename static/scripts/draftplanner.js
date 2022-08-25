@@ -1,4 +1,4 @@
-//// TODO: Average all stats, more important moves, important abilities?
+//// TODO: average all stats, more important moves, important abilities?
 
 $(document).ready(function() {
     //initialization
