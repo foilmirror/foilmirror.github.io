@@ -205,15 +205,15 @@ function update_table_data(pokemon){
     //update image
     if (pokemon==""){
         $("#tableimg").attr("src", "/static/images/defaultsprite.png")
-        /*$("#typingbox").html("-")
+        $("#typingbox").html("-")
         $("#abilitybox").html("-")
         $("#statbox").html("<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>")
-        $("#movesbox").html("-")*/
+        $("#movesbox").html("-")
     } else{
         datarow=$("."+classify("pokemon",pokemon))
         newimg=datarow.find('.monimage').attr("src")
         $("#tableimg").attr("src", newimg)
-        /*//update typing
+        //update typing
         newtyping=datarow.find(".rowtypes").html()
         $("#typingbox").html(newtyping)
         //update abilities
@@ -224,7 +224,7 @@ function update_table_data(pokemon){
         $("#statbox").html(newstats)
         //update moves
         newmoves=datarow.find(".rowmoves").html()
-        $("#movesbox").html(newmoves)*/
+        $("#movesbox").html(newmoves)
     }
 }
 
