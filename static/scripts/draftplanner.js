@@ -264,6 +264,10 @@ function update_team_details(){
                   $(`#teaminfo td.${"ground3"}`).append(img.clone())
                   $(`#teaminfo td.${"ground3"}`).append("*")
                 }
+                if (item_ == "ability-purifyingsalt") {
+                  $(`#teaminfo td.${"ghost1"}`).append(img.clone())
+                  $(`#teaminfo td.${"ghost1"}`).append("*")
+                }
 
                 $(`#teaminfo td.${item_}`).append(img.clone())
             })
