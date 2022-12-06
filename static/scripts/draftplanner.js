@@ -124,7 +124,7 @@ function appendPokemon(item,gen){
     var usefulmoves=$("<div class='rowmoves col-2 d-flex justify-content-center align-items-center text-center'></div>")
     useful=[]
     //usefulmoveslist=["Stealth Rock","Spikes","Toxic Spikes","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish","Fake Out","Extreme Speed","First Impression","Accelrock","Aqua Jet","Bullet Punch","Ice Shard","Mach Punch","Quick Attack","Shadow Sneak","Sucker Punch","Vacuum Wave","Water Shuriken","U-turn","Volt Switch","Parting Shot","Teleport","Flip Turn","Knock Off"]
-    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spikes","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish","Fake Out","U-turn","Volt Switch","Parting Shot","Teleport","Flip Turn","Knock Off"]
+    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spikes","Sticky Web","Defog","Rapid Spin","Court Change","Mortal Spin","Tidy Up","Heal Bell","Aromatherapy","Wish","Fake Out","Shed Tail","U-turn","Volt Switch","Parting Shot","Teleport","Flip Turn","Chilly Reception","Knock Off"]
 
 
     //GEN 8 DEX CUT WORKAROUND!!!!!!!!!!!
