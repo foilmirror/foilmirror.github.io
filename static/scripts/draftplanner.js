@@ -54,7 +54,8 @@ $(document).ready(function() {
 function loadData(){
     jQuery.ajaxSetup({async:false});
     var gen=$('#generation').val()
-    $.get( "https://pokemondraftleague.online/api/pokemon/", function( data ) {
+    //$.get( "https://pokemondraftleague.online/api/pokemon/", function( data ) {
+    $.get( "https://foilmirror.github.io/static/data/data.json", function( data ) {
         $("#searchlist").append("<div class='searchlist_heading border p-1'>Pokemon</div")
         $.each(data, function(i, item) {
             appendPokemon(item,gen)
