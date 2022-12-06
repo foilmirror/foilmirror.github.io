@@ -260,7 +260,7 @@ function update_team_details(){
                   $(`#teaminfo td.${"electric3"}`).append(img.clone())
                   $(`#teaminfo td.${"electric3"}`).append("*")
                 }
-                if (item_ == "ability-levitate" || (item_ == "ability-eartheater") {
+                if (item_ == "ability-levitate" || item_ == "ability-eartheater") {
                   $(`#teaminfo td.${"ground3"}`).append(img.clone())
                   $(`#teaminfo td.${"ground3"}`).append("*")
                 }
