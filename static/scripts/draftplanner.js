@@ -129,10 +129,9 @@ function appendPokemon(item,gen){
     //DEX CUT WORKAROUND!!!!!!!!!!!
     if(item.data.movesets[gen].length == 0) {
         gen = "gen8"
-        console.log(item.name)
-        if(item.data.movesets[gen].length == 0) {
-            gen = "gen7"
-        }
+    }
+    if(item.data.movesets[gen].length == 0) {
+        gen = "gen7"
     }
 
     $.each(item.data.movesets[gen], function(i, move) {
