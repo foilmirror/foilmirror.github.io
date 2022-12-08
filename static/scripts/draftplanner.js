@@ -1,3 +1,4 @@
+//TODO: full reset button, gen switcher that uses the reset function, natdex vs specific gen option
 $(document).ready(function() {
     //initialization
     loadData()
@@ -125,9 +126,12 @@ function appendPokemon(item,gen){
     usefulmoveslist=["Stealth Rock","Spikes","Toxic Spikes","Sticky Web","Defog","Rapid Spin","Court Change","Mortal Spin","Tidy Up","Heal Bell","Aromatherapy","Wish","Fake Out","Shed Tail","U-turn","Volt Switch","Parting Shot","Teleport","Flip Turn","Chilly Reception","Knock Off"]
 
 
-    //GEN 8 DEX CUT WORKAROUND!!!!!!!!!!!
+    //DEX CUT WORKAROUND!!!!!!!!!!!
     if(item.data.movesets[gen].length == 0) {
-        gen = "gen7"
+        gen = "gen8"
+        if(item.data.movesets[gen].length == 0) {
+            gen = "gen7"
+        }
     }
 
     $.each(item.data.movesets[gen], function(i, move) {
