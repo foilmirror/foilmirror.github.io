@@ -1,4 +1,3 @@
-//TODO: full reset button, gen switcher that uses the reset function, natdex vs specific gen option
 $(document).ready(function() {
     loadData()
 
@@ -28,6 +27,8 @@ $(document).ready(function() {
             update_team_details()
         }
     })
+
+    $("#resetbtn").click(reset_team)
 
     $("#generation").change(loadData)
 })
@@ -236,4 +237,12 @@ function update_team_details(){
         }
         $("#speedgap").text(maxdiff)
     }
+}
+
+function reset_team(){
+  $(".team_mon").each(function(e){
+      $(this).remove()
+  });
+  addMon()
+  update_team_details()
 }
