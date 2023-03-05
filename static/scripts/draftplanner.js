@@ -48,6 +48,10 @@ function loadData(){
         })
     });
 
+    activemon=$(".activemon").first()
+    name=activemon.find(".top_mon_name").text()
+    update_table_data(name)
+
     update_team_details()
 
     jQuery.ajaxSetup({async:true})
@@ -95,8 +99,12 @@ function appendPokemon(item,gen){
     newItem.append(basestats)
     var usefulmoves=$("<div class='rowmoves col-2 d-flex justify-content-center align-items-center text-center'></div>")
     useful=[]
+    //listing prio here is too much
     //usefulmoveslist=["Stealth Rock","Spikes","Toxic Spikes","Sticky Web","Defog","Rapid Spin","Court Change","Heal Bell","Aromatherapy","Wish","Fake Out","Extreme Speed","First Impression","Accelrock","Aqua Jet","Bullet Punch","Ice Shard","Mach Punch","Quick Attack","Shadow Sneak","Sucker Punch","Vacuum Wave","Water Shuriken","U-turn","Volt Switch","Parting Shot","Teleport","Flip Turn","Knock Off"]
-    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spikes","Sticky Web","Defog","Rapid Spin","Court Change","Mortal Spin","Tidy Up","Heal Bell","Aromatherapy","Wish","Fake Out","Shed Tail","U-turn","Volt Switch","Parting Shot","Teleport","Flip Turn","Chilly Reception","Knock Off"]
+    usefulmoveslist=["Stealth Rock","Spikes","Toxic Spikes","Sticky Web","Defog","Rapid Spin","Court Change","Mortal Spin","Tidy Up","Heal Bell","Aromatherapy","Wish","Fake Out","Shed Tail","U-turn","Volt Switch","Parting Shot","Flip Turn","Chilly Reception","Knock Off"]
+    if(gen == "gen8" || gen == "gen9") {
+      usefulmoveslist.push("Teleport")
+    }
 
     //DEX CUT WORKAROUND!!!!!!!!!!!
     if(gen == "gen9" && item.data.movesets[gen].length == 0) {
