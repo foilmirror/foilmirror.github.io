@@ -21,9 +21,9 @@ var gameFe = [
     ["alola", 87, "Gen 7"],
     ["7e", 10, "Gen 7 Extra"],
     ["galar", 96, "Gen 8"],
-    ["8e", 20, "Gen 8 Extra"],
-    ["paldea", 103, "Gen 9"],
-    ["9e", 10, "Gen 9 Extra"]
+    ["8e", 21, "Gen 8 Extra"],
+    ["paldea", 110, "Gen 9"],
+    ["9e", 13, "Gen 9 Extra"]
 ];
 
 var currentGame;
